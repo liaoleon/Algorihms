@@ -1,19 +1,25 @@
 ﻿using System;
+using System.Text;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.SortAlgorithms.Interface;
 using Algorithms.SortAlgorithms;
 
-namespace Algorithms.UnitTest
+namespace Algorithms.UnitTest.SortAlgorithms
 {
+    /// <summary>
+    /// BubbleSortWithFlagTest 的摘要描述
+    /// </summary>
     [TestClass]
-    public class BubbleSortTest
+    public class BubbleSortWithFlagTest
     {
-        public ISortAlgorithms<int[]> GetSystemUnderTest() {
-            return new BubbleSort();
+        public ISortAlgorithms<int[]> GetSystemUnderTest()
+        {
+            return new BubbleSortWithFlag();
         }
 
         [TestMethod]
-        public void TestBubbleSort_Case1()
+        public void TestBubbleSortWithFlag_Case1()
         {
             //arrange 
             int[] expected = { 1, 2, 3, 4, 5, 6 };
@@ -26,7 +32,7 @@ namespace Algorithms.UnitTest
         }
 
         [TestMethod]
-        public void TestBubbleSort_Case2()
+        public void TestBubbleSortWithFlag_Case2()
         {
             //arrange 
             int[] expected = { 0, 1, 3, 6, 10, 100 };
@@ -39,7 +45,7 @@ namespace Algorithms.UnitTest
         }
 
         [TestMethod]
-        public void TestBubbleSort_Case3()
+        public void TestBubbleSortWithFlag_Case3()
         {
             //arrange 
             int[] expected = { -3, -1, 0, 10, 20, 30, 100 };
