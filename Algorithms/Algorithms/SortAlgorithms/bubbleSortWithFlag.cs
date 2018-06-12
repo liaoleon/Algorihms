@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Algorithms.SortAlgorithms.Interface;
-
-namespace Algorithms.SortAlgorithms
+﻿namespace Algorithms.SortAlgorithms
 {
-    public class BubbleSortWithFlag : Exchange<int>, ISortAlgorithms<int[]>
+    public class BubbleSortWithFlag : BubbleSort
     {
-        public void Sort(ref int[] input)
+        public new void Sort(ref int[] input)
         {
             bool flag;
             for (int i = 0; i < input.Length; i++)

@@ -7,13 +7,11 @@ using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public class Exchange<T> : IExchange<T>
+    public class InsertionSort : ISortAlgorithms<int[]>
     {
-        public void Swap(ref T a, ref T b)
+        public void Sort(ref int[] input)
         {
-            T temp = a;
-            a = b;
-            b = temp;
+            throw new NotImplementedException();
         }
     }
 }

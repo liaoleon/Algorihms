@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Algorithms.SortAlgorithms.Interface;
+﻿using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public class BubbleSort : Exchange<int>, ISortAlgorithms<int[]>
+    public class BubbleSort : ISortAlgorithms<int[]>
     {
         public void Sort(ref int[] input)
         {
@@ -19,6 +14,12 @@ namespace Algorithms.SortAlgorithms
                     }
                 }
             }
+        }
+        protected void Swap<T>(ref T a, ref T b)
+        {
+            T temp = a;
+            a = b;
+            b = temp;
         }
     }
 }
