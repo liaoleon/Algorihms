@@ -7,9 +7,9 @@ using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public class InsertionSort : BubbleSort
+    public class InsertionSort : SortBase<int>, ISortAlgorithms<int[]>
     {
-        public override void Sort(ref int[] input)
+        public void Sort(ref int[] input)
         {
             for (int i = 1; i < input.Length; i++)
             {

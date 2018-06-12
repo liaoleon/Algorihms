@@ -2,7 +2,7 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public class BubbleSort : ISortAlgorithms<int[]>
+    public class BubbleSort : SortBase<int>, ISortAlgorithms<int[]>
     {
         public virtual void Sort(ref int[] input)
         {
@@ -16,12 +16,6 @@ namespace Algorithms.SortAlgorithms
                     }
                 }
             }
-        }
-        protected void Swap<T>(ref T a, ref T b)
-        {
-            T temp = a;
-            a = b;
-            b = temp;
         }
     }
 }
