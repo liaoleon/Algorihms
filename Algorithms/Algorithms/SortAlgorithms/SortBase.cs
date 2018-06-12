@@ -1,5 +1,4 @@
-﻿using System;
-using Algorithms.SortAlgorithms.Interface;
+﻿using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {

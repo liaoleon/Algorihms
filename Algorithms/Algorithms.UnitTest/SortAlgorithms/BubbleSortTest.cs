@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Algorithms.SortAlgorithms;
 using Algorithms.SortAlgorithms.Interface;
-using Algorithms.SortAlgorithms;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algorithms.UnitTest
 {
