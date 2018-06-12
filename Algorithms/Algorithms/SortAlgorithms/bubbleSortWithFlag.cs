@@ -2,7 +2,7 @@
 {
     public class BubbleSortWithFlag : BubbleSort
     {
-        public new void Sort(ref int[] input)
+        public override void Sort(ref int[] input)
         {
             bool flag;
             for (int i = 0; i < input.Length; i++)

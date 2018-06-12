@@ -56,5 +56,18 @@ namespace Algorithms.UnitTest.SortAlgorithms
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
+
+        [TestMethod]
+        public void TestBubbleSortWithFlag_Case4()
+        {
+            //arrange 
+            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] testCase = { 10, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var sut = GetSystemUnderTest();
+            //act
+            sut.Sort(ref testCase);
+            //assert
+            CollectionAssert.AreEqual(expected, testCase);
+        }
     }
 }
