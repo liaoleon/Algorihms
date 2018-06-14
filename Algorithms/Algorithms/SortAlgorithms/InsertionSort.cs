@@ -1,7 +1,4 @@
-﻿using System;
-using Algorithms.SortAlgorithms.Interface;
-
-namespace Algorithms.SortAlgorithms
+﻿namespace Algorithms.SortAlgorithms
 {
     public class InsertionSort : SortBase<int[]>
     {
@@ -15,7 +12,6 @@ namespace Algorithms.SortAlgorithms
                 }
             }
         }
-
         private void OldSort(ref int[] input)
         {
             for (int i = 1; i < input.Length; i++)

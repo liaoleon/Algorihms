@@ -1,6 +1,4 @@
-﻿using Algorithms.SortAlgorithms.Interface;
-
-namespace Algorithms.SortAlgorithms
+﻿namespace Algorithms.SortAlgorithms
 {
     public class BubbleSort : SortBase<int[]>
     {
