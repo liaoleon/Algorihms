@@ -48,7 +48,6 @@
     <Compile Include="SortAlgorithms\BubbleSort.cs" />
     <Compile Include="SortAlgorithms\InsertionSort.cs" />
     <Compile Include="SortAlgorithms\Interface\ISortAlgorithms.cs" />
-    <Compile Include="SortAlgorithms\Interface\ISortBase.cs" />
     <Compile Include="SortAlgorithms\SortBase.cs" />
   </ItemGroup>
   <ItemGroup>

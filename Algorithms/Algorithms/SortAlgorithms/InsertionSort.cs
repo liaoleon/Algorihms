@@ -2,7 +2,7 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public class InsertionSort : SortBase<int>, ISortAlgorithms<int[]>
+    public class InsertionSort : SortBase, ISortAlgorithms<int[]>
     {
         public void Sort(ref int[] input)
         {

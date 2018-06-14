@@ -2,7 +2,7 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public class BubbleSort : SortBase<int>, ISortAlgorithms<int[]>
+    public class BubbleSort : SortBase, ISortAlgorithms<int[]>
     {
         public virtual void Sort(ref int[] input)
         {
