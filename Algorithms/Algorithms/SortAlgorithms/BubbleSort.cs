@@ -2,9 +2,9 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public class BubbleSort : SortBase, ISortAlgorithms<int[]>
+    public class BubbleSort : SortBase<int[]>
     {
-        public virtual void Sort(ref int[] input)
+        public override void Sort(ref int[] input)
         {
             for (int i = 0; i < input.Length; i++)
             {

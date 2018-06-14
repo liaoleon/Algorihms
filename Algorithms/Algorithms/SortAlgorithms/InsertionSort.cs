@@ -1,10 +1,11 @@
-﻿using Algorithms.SortAlgorithms.Interface;
+﻿using System;
+using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public class InsertionSort : SortBase, ISortAlgorithms<int[]>
+    public class InsertionSort : SortBase<int[]>
     {
-        public void Sort(ref int[] input)
+        public override void Sort(ref int[] input)
         {
             for (int i = 1; i < input.Length; i++)
             {

@@ -2,11 +2,13 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public abstract class SortBase
+    public abstract class SortBase<T> : ISortAlgorithms<T>
     {
-        protected void Swap<T>(ref T a, ref T b)
+        public abstract void Sort(ref T input);
+
+        protected void Swap<T2>(ref T2 a, ref T2 b)
         {
-            T temp = a;
+            T2 temp = a;
             a = b;
             b = temp;
         }
