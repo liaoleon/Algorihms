@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortAlgorithms\BubbleSortWithFlagTest.cs" />
     <Compile Include="SortAlgorithms\InsertionSortTest.cs" />
+    <Compile Include="SortAlgorithms\HeapSortTest.cs" />
     <Compile Include="SortAlgorithms\SelectionSortTest.cs" />
   </ItemGroup>
   <ItemGroup>
