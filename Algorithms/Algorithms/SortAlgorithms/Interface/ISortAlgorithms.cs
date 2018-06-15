@@ -1,7 +1,9 @@
-﻿namespace Algorithms.SortAlgorithms.Interface
+﻿using System;
+
+namespace Algorithms.SortAlgorithms.Interface
 {
-    public interface ISortAlgorithms<T>
+    public interface ISortAlgorithms
     {
-        void Sort(ref T input);
+        void Sort<T>(ref T[] input) where T : IComparable;
     }
 }

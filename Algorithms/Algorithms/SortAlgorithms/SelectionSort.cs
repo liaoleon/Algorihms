@@ -2,16 +2,17 @@
 
 namespace Algorithms.SortAlgorithms
 {
-    public class SelectionSort : SortBase<int[]>
+    public class SelectionSort : SortBase
     {
-        public override void Sort(ref int[] input)
+        public override void Sort<T>(ref T[] input)
         {
             for (int i = 0; i < input.Length - 1; i++)
             {
                 int min = i;
                 for (int j = i + 1; j < input.Length; j++)
                 {
-                    if (input[j] < input[min]) {
+                    if (input[j].CompareTo(input[min]) < 0)
+                    {
                         min = j;
                     }
                 }

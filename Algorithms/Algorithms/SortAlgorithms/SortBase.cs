@@ -1,14 +1,15 @@
-﻿using Algorithms.SortAlgorithms.Interface;
+﻿using System;
+using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public abstract class SortBase<T> : ISortAlgorithms<T>
+    public abstract class SortBase : ISortAlgorithms
     {
-        public abstract void Sort(ref T input);
+        public abstract void Sort<T>(ref T[] input) where T : IComparable;
 
-        protected void Swap<T2>(ref T2 a, ref T2 b)
+        protected void Swap<T>(ref T a, ref T b)
         {
-            T2 temp = a;
+            T temp = a;
             a = b;
             b = temp;
         }

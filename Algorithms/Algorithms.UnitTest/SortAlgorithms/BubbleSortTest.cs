@@ -7,7 +7,7 @@ namespace Algorithms.UnitTest
     [TestClass]
     public class BubbleSortTest
     {
-        public ISortAlgorithms<int[]> GetSystemUnderTest() {
+        public ISortAlgorithms GetSystemUnderTest() {
             return new BubbleSort();
         }
 

@@ -10,7 +10,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
     [TestClass]
     public class InsertionSortTest
     {
-        public ISortAlgorithms<int[]> GetSystemUnderTest()
+        public ISortAlgorithms GetSystemUnderTest()
         {
             return new InsertionSort();
         }

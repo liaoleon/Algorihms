@@ -10,7 +10,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
     [TestClass]
     public class BubbleSortWithFlagTest
     {
-        public ISortAlgorithms<int[]> GetSystemUnderTest()
+        public ISortAlgorithms GetSystemUnderTest()
         {
             return new BubbleSortWithFlag();
         }
