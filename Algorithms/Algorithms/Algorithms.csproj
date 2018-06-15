@@ -48,6 +48,7 @@
     <Compile Include="SortAlgorithms\BubbleSortWithFlag.cs" />
     <Compile Include="SortAlgorithms\HeapSort.cs" />
     <Compile Include="SortAlgorithms\InsertionSort.cs" />
+    <Compile Include="SortAlgorithms\Interface\IHeapSort.cs" />
     <Compile Include="SortAlgorithms\Interface\ISortAlgorithms.cs" />
     <Compile Include="SortAlgorithms\SelectionSort.cs" />
     <Compile Include="SortAlgorithms\SortBase.cs" />

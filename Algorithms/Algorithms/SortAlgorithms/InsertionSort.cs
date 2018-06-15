@@ -2,7 +2,7 @@
 {
     public class InsertionSort : SortBase
     {
-        public override void Sort<T>(ref T[] input)
+        public override void Sort<T>(T[] input)
         {
             for (int i = 1; i < input.Length; i++)
             {
@@ -12,7 +12,7 @@
                 }
             }
         }
-        private void OldSort(ref int[] input)
+        private void OldSort(int[] input)
         {
             for (int i = 1; i < input.Length; i++)
             {

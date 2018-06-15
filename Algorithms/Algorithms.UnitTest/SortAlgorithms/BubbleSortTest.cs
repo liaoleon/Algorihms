@@ -19,7 +19,7 @@ namespace Algorithms.UnitTest
             int[] testCase = { 6, 2, 3, 4, 1, 5 };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -32,7 +32,7 @@ namespace Algorithms.UnitTest
             int[] testCase = { 100, 3, 1, 6, 0, 10 };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -45,7 +45,7 @@ namespace Algorithms.UnitTest
             int[] testCase = { 100, 0, 10, -1, 20, 30, -3 };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -58,7 +58,7 @@ namespace Algorithms.UnitTest
             int[] testCase = { 10, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -71,7 +71,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "c", "f", "a", "d", "b", "e" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -84,7 +84,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "C", "F", "A", "D", "B", "E" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -97,7 +97,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "C", "f", "A", "d", "B", "e" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -110,7 +110,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "c", "f", "a", "D", "b", "E" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -122,7 +122,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "c", "B", "A", "C", "b", "a" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }
@@ -135,7 +135,7 @@ namespace Algorithms.UnitTest
             string[] testCase = { "a", "a", "A", "a", "A", "A" };
             var sut = GetSystemUnderTest();
             //act
-            sut.Sort(ref testCase);
+            sut.Sort(testCase);
             //assert
             CollectionAssert.AreEqual(expected, testCase);
         }

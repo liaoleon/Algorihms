@@ -4,7 +4,7 @@ namespace Algorithms.SortAlgorithms
 {
     public class SelectionSort : SortBase
     {
-        public override void Sort<T>(ref T[] input)
+        public override void Sort<T>(T[] input)
         {
             for (int i = 0; i < input.Length - 1; i++)
             {
