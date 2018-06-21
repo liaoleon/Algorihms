@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-
-namespace Algorithms.SortAlgorithms
+﻿namespace Algorithms.SortAlgorithms
 {
     public class BubbleSort : SortBase
     {

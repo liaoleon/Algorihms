@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Algorithms.SortAlgorithms.Interface
 {
     public interface IHeapSort
