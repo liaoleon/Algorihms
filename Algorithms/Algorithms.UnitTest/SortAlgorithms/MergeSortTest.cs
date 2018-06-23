@@ -8,15 +8,15 @@ namespace Algorithms.UnitTest.SortAlgorithms
     /// BubbleSortWithFlagTest 的摘要描述
     /// </summary>
     [TestClass]
-    public class MargeSortTest
+    public class MergeSortTest
     {
         public ISortAlgorithms GetSystemUnderTest()
         {
-            return new MargeSort();
+            return new MergeSort();
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveInteger_Sorted_Case1()
+        public void TestMergeSort_PositiveInteger_Sorted_Case1()
         {
             //arrange 
             int[] expected = { 1, 2, 3, 4, 5, 6 };
@@ -29,7 +29,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveInteger_Sorted_Case2()
+        public void TestMergeSort_PositiveInteger_Sorted_Case2()
         {
             //arrange 
             int[] expected = { 1, 2, 3, 4, 5, 6 };
@@ -42,7 +42,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveInteger_Sorted_Case3()
+        public void TestMergeSort_PositiveInteger_Sorted_Case3()
         {
             //arrange 
             int[] expected = { 1, 2 };
@@ -55,7 +55,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveInteger_Sorted_Case4()
+        public void TestMergeSort_PositiveInteger_Sorted_Case4()
         {
             //arrange 
             int[] expected = { 1, 2, 3 };
@@ -68,7 +68,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveInteger_Sorted2()
+        public void TestMergeSort_PositiveInteger_Sorted2()
         {
             //arrange 
             int[] expected = { 0, 1, 3, 6, 10, 100 };
@@ -81,7 +81,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_Integer_Sorted()
+        public void TestMergeSort_Integer_Sorted()
         {
             //arrange 
             int[] expected = { -3, -1, 0, 10, 20, 30, 100 };
@@ -94,7 +94,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_PositiveIntegerMoreElement_Sorted()
+        public void TestMergeSort_PositiveIntegerMoreElement_Sorted()
         {
             //arrange 
             int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -107,7 +107,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_LowerCaseString_Sorted()
+        public void TestMergeSort_LowerCaseString_Sorted()
         {
             //arrange 
             string[] expected = { "a", "b", "c", "d", "e", "f" };
@@ -120,7 +120,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_UpperCaseString_Sorted()
+        public void TestMergeSort_UpperCaseString_Sorted()
         {
             //arrange 
             string[] expected = { "A", "B", "C", "D", "E", "F" };
@@ -133,7 +133,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_HybridCaseString_Sorted()
+        public void TestMergeSort_HybridCaseString_Sorted()
         {
             //arrange 
             string[] expected = { "A", "B", "C", "d", "e", "f" };
@@ -146,7 +146,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_HybridCaseString_Sorted2()
+        public void TestMergeSort_HybridCaseString_Sorted2()
         {
             //arrange 
             string[] expected = { "a", "b", "c", "D", "E", "f" };
@@ -158,7 +158,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
             CollectionAssert.AreEqual(expected, testCase);
         }
         [TestMethod]
-        public void TestMargeSort_HybridCaseString_Sorted3()
+        public void TestMergeSort_HybridCaseString_Sorted3()
         {
             //arrange 
             string[] expected = { "a", "A", "b", "B", "c", "C" };
@@ -171,7 +171,7 @@ namespace Algorithms.UnitTest.SortAlgorithms
         }
 
         [TestMethod]
-        public void TestMargeSort_HybridCaseStringOnlyA_Sorted()
+        public void TestMergeSort_HybridCaseStringOnlyA_Sorted()
         {
             //arrange 
             string[] expected = { "a", "a", "a", "A", "A", "A" };

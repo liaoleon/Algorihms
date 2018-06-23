@@ -2,9 +2,9 @@
 
 namespace Algorithms.SortAlgorithms.Interface
 {
-    public interface IMargeSort
+    public interface IMergeSort
     {
-        void Marge<T>(T[] input, int left, int right) where T : IComparable;
+        void Merge<T>(T[] input, int left, int right) where T : IComparable;
         void Divide<T>(T[] input, int left, int right) where T : IComparable;
     }
 }

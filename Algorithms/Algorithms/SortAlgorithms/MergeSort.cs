@@ -3,9 +3,9 @@ using Algorithms.SortAlgorithms.Interface;
 
 namespace Algorithms.SortAlgorithms
 {
-    public class MargeSort : SortBase, IMargeSort
+    public class MergeSort : SortBase, IMergeSort
     {
-        public void Marge<T>(T[] input, int left, int right) where T : IComparable
+        public void Merge<T>(T[] input, int left, int right) where T : IComparable
         {
             T[] Sorted = new T[right - left];
             int mid = (left + right) / 2;
@@ -39,7 +39,7 @@ namespace Algorithms.SortAlgorithms
                 int mid = (left + right) / 2;
                 Divide(input, left, mid);
                 Divide(input, mid, right);
-                Marge(input, left, right);
+                Merge(input, left, right);
             }
         }
 
