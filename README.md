@@ -6,3 +6,4 @@
 * [Selection Sort](https://zh.wikipedia.org/wiki/选择排序)
 * [Heap Sort](https://zh.wikipedia.org/wiki/堆排序)
 * [Quick Sort](https://zh.wikipedia.org/wiki/快速排序)
+* [Merge Sort](https://zh.wikipedia.org/wiki/归并排序)
