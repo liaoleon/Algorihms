@@ -49,8 +49,10 @@
     <Compile Include="SortAlgorithms\HeapSort.cs" />
     <Compile Include="SortAlgorithms\InsertionSort.cs" />
     <Compile Include="SortAlgorithms\Interface\IHeapSort.cs" />
+    <Compile Include="SortAlgorithms\Interface\IMargeSort.cs" />
     <Compile Include="SortAlgorithms\Interface\IQuickSort.cs" />
     <Compile Include="SortAlgorithms\Interface\ISortAlgorithms.cs" />
+    <Compile Include="SortAlgorithms\MargeSort.cs" />
     <Compile Include="SortAlgorithms\QuickSort.cs" />
     <Compile Include="SortAlgorithms\SelectionSort.cs" />
     <Compile Include="SortAlgorithms\SortBase.cs" />
