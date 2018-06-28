@@ -17,7 +17,7 @@ namespace BMICalculation.UnitTest
         public void ManBMI_Height180cm_Weight50kg_should過瘦()
         {
             //arrange 
-            string expected = "過瘦";
+            string expected = Message.Skinny;
             float height = 1.56f;
             int weight = 40;
             var sut = GetSystemUnderTest();
@@ -32,7 +32,7 @@ namespace BMICalculation.UnitTest
         public void ManBMI_Height180cm_Weight75kg_should正常()
         {
             //arrange 
-            string expected = "正常";
+            string expected = Message.Normal;
             float height = 1.60f;
             int weight = 50;
             var sut = GetSystemUnderTest();
@@ -47,7 +47,7 @@ namespace BMICalculation.UnitTest
         public void ManBMI_Height180cm_Weight100kg_should過胖()
         {
             //arrange 
-            string expected = "過胖";
+            string expected = Message.Fat;
             float height = 1.62f;
             int weight = 60;
             var sut = GetSystemUnderTest();

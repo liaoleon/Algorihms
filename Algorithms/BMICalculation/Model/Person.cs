@@ -21,10 +21,10 @@ namespace BMICalculation.Model
 
     public class Message
     {
-        public const string Skinny = "過瘦";
+        public const string Skinny = "太瘦";
 
-        public const string Normal = "正常";
+        public const string Normal = "適中";
 
-        public const string Fat = "過胖";
+        public const string Fat = "太胖";
     }
 }
