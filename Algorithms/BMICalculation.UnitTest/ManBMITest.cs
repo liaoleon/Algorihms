@@ -10,7 +10,7 @@ namespace BMICalculation.UnitTest
     {
         public BMIBase GetSystemUnderTest()
         {
-            return new BMIFactory().GetBMIEntity(Sex.Man);
+            return new ManBMI();
         }
 
         [TestMethod]
@@ -22,10 +22,11 @@ namespace BMICalculation.UnitTest
             int weight = 60;
             var sut = GetSystemUnderTest();
             //act
-            sut.BMICal(height, weight);
+            int bmi = sut.BMICal(height, weight);
             string result = sut.GetMessage();
             //assert
             Assert.AreEqual(expected, result);
+            //Assert.AreEqual(19, bmi);
         }
 
         [TestMethod]

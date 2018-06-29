@@ -10,11 +10,11 @@ namespace BMICalculation.UnitTest
     {
         public BMIBase GetSystemUnderTest()
         {
-            return new BMIFactory().GetBMIEntity(Sex.Woman);
+            return new WomanBMI();
         }
 
         [TestMethod]
-        public void ManBMI_Height180cm_Weight50kg_should過瘦()
+        public void ManBMI_Height156cm_Weight40kg_should過瘦()
         {
             //arrange 
             string expected = Message.Skinny;
@@ -29,7 +29,7 @@ namespace BMICalculation.UnitTest
         }
 
         [TestMethod]
-        public void ManBMI_Height180cm_Weight75kg_should正常()
+        public void ManBMI_Height160cm_Weight50kg_should正常()
         {
             //arrange 
             string expected = Message.Normal;
@@ -37,14 +37,14 @@ namespace BMICalculation.UnitTest
             int weight = 50;
             var sut = GetSystemUnderTest();
             //act
-            sut.BMICal(height, weight);
+            int bmi = sut.BMICal(height, weight);
             string result = sut.GetMessage();
             //assert
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void ManBMI_Height180cm_Weight100kg_should過胖()
+        public void ManBMI_Height162cm_Weight60kg_should過胖()
         {
             //arrange 
             string expected = Message.Fat;
